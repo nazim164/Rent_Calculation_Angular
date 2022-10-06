@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <form class=" p-3 rounded-4 mt-4 text-white" style="background: linear-gradient(#1f1c2c,#928dab)">
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Rent Per Month</label>
+          <input type="text" class="form-control" id="rent" placeholder="Enter Your  Rent" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Date Of Agreement</label>
+          <input type="date" class="form-control" id="agree" placeholder="Enter Date Of Agreement" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Days in First Month</label>
+          <input type="text" class="form-control" id="day" placeholder="Enter Days in First Month" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Days in First Month</label>
+          <input type="date" class="form-control" id="start_date" placeholder="Enter Days in First Month" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Lease End Date</label>
+          <input type="date" class="form-control " id="end_date" placeholder="Enter Lease End Date" required>
+        </div>
+        <button type="button" class="btn text-white " (click)="myFunction()"
+          style="background: linear-gradient(#8a2387,#e94057,#f27121);">Calculate</button>
+      </form>
+
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 rounded-4 mt-4 p-3  text-dark fw-bold" style="background: linear-gradient(
+#ff9966
+,
+#ff5e62)">
+      Name <p class="text-dark" id="demo"></p>
+      Rent Per Month <p class="text-dark" id="demo1"></p>
+      Date Of Agreement<p class="text-dark" id="demo2"></p>
+      Days in First Month <p class="text-dark" id="demo3"></p>
+      Lease Starting Date <p class="text-dark" id="demo4"></p>
+      Lease End Date <p class="text-dark" id="demo5"></p>
+      Daily Rent <p class="text-dark" id="demo6"></p>
+      Yearly Total <p class="text-dark" id="demo7"></p>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
